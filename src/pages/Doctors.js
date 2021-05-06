@@ -19,7 +19,7 @@ function Doctors(){
             
             <div className="container content">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-3">
                     <div className="card shadow-sm">
                 <div class="card-body">
                     <img src={doc1} alt="" className="img-fluid" title="" loading="lazy" />
@@ -30,7 +30,7 @@ function Doctors(){
                 </div>
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-3">
                     <div className="card shadow-sm">
                 <div class="card-body">
                     <img src={doc2} alt="" title="" className="img-fluid" loading="lazy" />
