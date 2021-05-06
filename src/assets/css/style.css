@@ -386,25 +386,25 @@ display: flex;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 376px) and (max-width: 767.98px) {
   .top-info,.main-nav,.top-bar{
     display: none;
   }
   .btn-primary.one{
     text-align: center;
-    min-width: 395px;
+    min-width: 100%;
     font-size: 17px;
   }
 
   .btn-primary.two{
     text-align: center;
-    min-width: 395px;
+    min-width: 100%;
     font-size: 17px;
   }
 
   .jumbotron h1 {
     /* margin-top: 5%; */
-    line-height: 20px;
+    line-height: 40px;
   } 
 
   .section-one-content{
