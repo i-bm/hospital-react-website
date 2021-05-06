@@ -38,21 +38,21 @@ function Footer (){
                 <div className="col-md-2 links">
                     <ul>
                         <h2>SERVICES</h2>
-                        <li><Link to="/ana" >anaesthesia</Link></li>
-                        <li><Link to="/" >cardiology</Link></li>
-                        <li><Link to="/" >dentistry</Link></li>
-                        <li><Link to="/" >dermatology</Link></li>
-                        <li><Link to="/" >dietetics</Link></li>
-                        <li><Link to="/" >plastic surgery</Link></li>
-                        <li><Link to="/" >surgery (general)</Link></li>
-                        <li><Link to="/" >urology</Link></li>
+                        <li><Link to="/conditions-and-services/anaesthesia" >anaesthesia</Link></li>
+                        <li><Link to="/conditions-and-services/cardiology" >cardiology</Link></li>
+                        <li><Link to="#" >dentistry</Link></li>
+                        <li><Link to="#" >dermatology</Link></li>
+                        <li><Link to="#" >dietetics</Link></li>
+                        <li><Link to="#" >plastic surgery</Link></li>
+                        <li><Link to="#" >surgery (general)</Link></li>
+                        <li><Link to="#" >urology</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-3 links">
                     <ul>
                         <h2>STAY CONNECTED</h2>
                         <li>C123 Paradise, Accra, GH</li>
-                        <li><Link to="/#">+233 247 924 225</Link></li>
+                        <li><Link to="#">+233 247 924 225</Link></li>
 
                         {/* <li>C123 Paradise, Accra, GH</li>
                         <li><a href="#">+233 247 924 225</a></li>
