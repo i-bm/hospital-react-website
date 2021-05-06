@@ -131,12 +131,12 @@ nav.navbar{
   }
   
   .jumbotron.hero-pages p {
-    font-size: 1.8vh;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    margin-top: .3rem;
-    margin-bottom: 2rem;
-    padding-right: 20rem;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    padding-right: 100px;
   }
 
 footer {
@@ -326,22 +326,112 @@ border-radius: 0px;
 font-size:1.2rem;
 margin-left: -13px !important
 }
+
+.mobile-nav{
+  min-height: 90px;
+  margin-top:15px;
+  
+}
+
+.bars{
+  font-size:2.3rem;
+  font-weight: 500;
+  color:var(--blue-black)
+}
+
+/* .fa-times{
+  font-size:2rem;
+  font-weight: 300;
+  color:#fff;
+  position: absolute;
+  left:15px;
+  top:15px;
+  
+} */
+.mobile-menu ul li a{
+  padding-left: 20px;
+  /* margin-bottom: 20px; */
+  color:var(--white-text);
+  font-size:1.09rem;
+  font-weight: 300;
+  /* border:1px solid red; */
+  line-height: 50px;
+
+}
+.mobile-menu{
+  width: 100%; 
+  position: absolute; 
+  z-index: 1; 
+  top: 10; 
+  background-color: var(--blue-black);
+  overflow-x: hidden; 
+  padding-top: 30px; 
+  transition: all 0.9s; 
+  opacity: 0.96;
+}
+
+.section-one-content{
+display: flex;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .jumbotron {
+  /* .jumbotron {
     margin-top: 5%;
+  } */
+  .top-info,.main-nav,.top-bar{
+    display: none;
   }
 
+ 
 }
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .top-info,.main-nav,.top-bar{
+    display: none;
+  }
+  .btn-primary.one{
+    text-align: center;
+    min-width: 395px;
+    font-size: 17px;
+  }
+
+  .btn-primary.two{
+    text-align: center;
+    min-width: 395px;
+    font-size: 17px;
+  }
+
+  .jumbotron h1 {
+    /* margin-top: 5%; */
+    line-height: 20px;
+  } 
+
+  .section-one-content{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+    /* border:1px solid red */
+  }
+}
 
 /* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .top-info,.main-nav,.top-bar{
+    display: none;
+  }
+}
 
 /* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   .mobile-nav,.mobile-menu{
+  display: none;
+} 
+ }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { ... } */
+ @media (min-width: 1200px) {  
+   .mobile-nav,.mobile-menu{
+  display: none;
+} 
+} 

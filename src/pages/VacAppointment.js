@@ -8,7 +8,8 @@ const bigBoder = {
 const callNow = {
   fontWeight:'700',
   color:'#02123A'
-}
+};
+
 
 
 function Appointment(){
@@ -26,12 +27,18 @@ UpdateFormData({
 const handleSubmit = (e) =>{
   e.preventDefault();
   setPosting(true);
-  // console.log(formData);
+  console.log(e);
+ 
   Axios.post(`https://hospital.isaacboakyemanu.me/api/receive-vaccine-appointment`, formData
   )
   .then(response => {
     console.log(response);
     e.target.reset();
+    window.scroll({
+      top: 300, 
+      left: 0, 
+      behavior: 'smooth'
+    });
     setPosted(true);
     setPosting(false);
     setTimeout(function(){

@@ -13,7 +13,7 @@ nav.style.marginTop='0px'
 function TopInfo(){
     return(
         <div>
-            <div className="fixed-top">
+            <div className="fixed-top top-info">
             <div className="alert alert-primary alert-dismissible" role="alert">
                 <div className="container">
   <strong>COVID-19:</strong> <u><Link to="/vaccination-appointment">Schedule a vaccination appointment</Link></u> or <u><Link to="/covid-updates">view our vaccine updates,</Link></u> safety measures, patient and visitor policies and latest information.

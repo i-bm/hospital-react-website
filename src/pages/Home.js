@@ -33,7 +33,7 @@ function Home(){
           <div className="container">
               <h1 className="text-center">Care when you need it, where you need it.</h1>
               <div className="row">
-                  <div class="col-md-4 d-flex justify-content-start">
+                  <div class="col-md-4 section-one-content">
                       <div className="card--img">
                       <img src={Vac}  width="95px"  alt="vaccine" />
                       </div>
@@ -45,7 +45,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                     </div>
                   </div>
 
-                  <div class="col-md-4 d-flex justify-content-start">
+                  <div class="col-md-4 section-one-content">
                       <div className="card--img">
                       <img src={Demand} width="95px" alt="vaccine" />
                       </div>
@@ -56,7 +56,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                     </div>
                   </div>
 
-                  <div class="col-md-4 d-flex justify-content-start">
+                  <div class="col-md-4 section-one-content">
                       <div className="card--img">
                       <img src={Appoint} width="95px" alt="vaccine" />
                       </div>

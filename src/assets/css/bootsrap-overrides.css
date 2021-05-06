@@ -67,10 +67,10 @@
 
 .jumbotron p {
   font-size: 3vh;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 35px;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .btn-primary.one{
@@ -78,8 +78,8 @@
   color: var(--white-text) !important;
   border-radius: 0px !important;
   border: 0px !important;
-  padding:15px !important;
-  margin:0 2rem 0 0;
+  padding:15px ;
+  margin:0 32px 15px 0;
   font-weight: 300;
 }
 
@@ -88,7 +88,8 @@
     color: var(--black-text) !important;
     border-radius: 0px !important;
     border: 0px !important;
-    padding:15px !important;
+    padding:15px;
+    margin-bottom: 15px;
     
   }
 

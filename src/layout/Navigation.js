@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TopInfo from '../components/TopInfo';
 import {Link} from 'react-router-dom';
 import Logo from '../assets/img/logo.png';
+import MobileMenu from '../components/MobileMenu';
 
 function Navigation (){
+
+  const[openMenu, setOpenMenu] = useState(false);
   return(
 <div>
 <TopInfo />
 
-<nav className="top-nav navbar navbar-expand-lg navbar-light d-none d-md-block d-lg-block">
+<nav className="top-nav navbar navbar-expand-lg navbar-light top-bar">
     <div className="container">
 <ul className="navbar-nav mr-auto">
       <li className="nav-item">
@@ -30,7 +33,7 @@ function Navigation (){
 
 
 
-<nav className="main-nav navbar navbar-expand-lg navbar-light d-none d-md-block d-lg-block" style={{backgroundColor: "transparent"}}>
+<nav className="main-nav navbar navbar-expand-lg navbar-light" style={{backgroundColor: "transparent"}}>
     <div className="container">
   <Link to="/" className="navbar-brand"><img src={Logo} width="200" alt="Logo" /></Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,6 +85,21 @@ function Navigation (){
   </div>
   </div>
 </nav>
+
+<nav className="mobile-nav">
+<div className="container d-flex align-items-center justify-content-between">
+  
+  <Link to="/" className="navbar-brand"><img src={Logo} width="180" alt="Logo" /></Link>
+
+  {openMenu ? 
+  <Link to="#" onClick={()=>{setOpenMenu(false)}}><i class="fal fa-bars bars"></i></Link>:
+  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i class="fal fa-bars bars"></i></Link>
+}
+ 
+  </div>
+</nav>
+{openMenu ? <MobileMenu /> : '' }
+
 </div>
   );
   }

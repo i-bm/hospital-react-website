@@ -22,7 +22,7 @@ function Doctors(){
                     <div className="col-md-4">
                     <div className="card shadow-sm">
                 <div class="card-body">
-                    <img src={doc1} alt="" title="" loading="lazy" />
+                    <img src={doc1} alt="" className="img-fluid" title="" loading="lazy" />
                    <p className="doctor-name">Prince  K. Boamah, MD</p>
                    <p className="doctor-specialty">Heart Care</p>
                    <Link to="/" className="btn btn-primary btn-block">Read More</Link>
@@ -33,7 +33,7 @@ function Doctors(){
                     <div className="col-md-4">
                     <div className="card shadow-sm">
                 <div class="card-body">
-                    <img src={doc2} alt="" title="" loading="lazy" />
+                    <img src={doc2} alt="" title="" className="img-fluid" loading="lazy" />
                    <p className="doctor-name">Emmanuel Eyram  Kokuvi, MD</p>
                    <p className="doctor-specialty">Orthopedic Care</p>
                    <Link to="/" className="btn btn-primary btn-block">Read More</Link>
@@ -44,7 +44,7 @@ function Doctors(){
                     <div className="col-md-4">
                     <div className="card shadow-sm">
                 <div class="card-body">
-                    <img src={doc3} alt="" title="" loading="lazy" />
+                    <img src={doc3} alt="" title="" className="img-fluid" loading="lazy" />
                    <p className="doctor-name">Yvonne Agemang-Boateng, MD</p>
                    <p className="doctor-specialty">General Practioner</p>
                    <Link to="/" className="btn btn-primary btn-block">Read More</Link>
