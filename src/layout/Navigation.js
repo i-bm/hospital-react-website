@@ -93,7 +93,7 @@ function Navigation (){
 
   {openMenu ? 
   <Link to="#" onClick={()=>{setOpenMenu(false)}}><i class="fal fa-bars bars"></i></Link>:
-  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i class="fal fa-bars bars"></i></Link>
+  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i class="fas fa-times"></i></Link>
 }
  
   </div>
