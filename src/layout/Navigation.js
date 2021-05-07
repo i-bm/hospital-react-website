@@ -92,8 +92,8 @@ function Navigation (){
   <Link to="/" className="navbar-brand"><img src={Logo} width="180" alt="Logo" /></Link>
 
   {openMenu ? 
-  <Link to="#" onClick={()=>{setOpenMenu(false)}}><i class="fal fa-bars bars"></i></Link>:
-  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i class="fas fa-times"></i></Link>
+  <Link to="#" onClick={()=>{setOpenMenu(false)}}><i class="fal fa-times"></i></Link>:
+  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i class="fas fa-bars bars"></i></Link>
 }
  
   </div>
