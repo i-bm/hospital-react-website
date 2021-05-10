@@ -11,6 +11,7 @@ import Doctors from './pages/Doctors';
 import CovidUpdate from './pages/CovidUpdate';
 import Services from './pages/Services';
 import VacAppointment from './pages/VacAppointment';
+import OnDemandAppointment from './pages/OnDemandAppointment';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Services path="/conditions-and-services/anaesthesia" component={Services} />
       <Services path="/conditions-and-services/cardiology" component={Services} />
       <VacAppointment path="/vaccination-appointment" component={VacAppointment} />
+      <OnDemandAppointment path="/schedule-on-demand-appointment" component={OnDemandAppointment} />
       </Switch>
     </div>
     </Router>

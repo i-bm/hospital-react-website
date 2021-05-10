@@ -27,7 +27,7 @@ function Navigation (){
     <li className="nav-item"><Link to="#"> <i class="fab fa-linkedin-in"></i></Link></li>
     <li className="nav-item"><Link to="/appointment" className="btn btn-success">Get An Appointment</Link></li>
     </ul> */}
-    <Link to="/appointment" className="btn btn-success">Get An Appointment</Link>
+    <Link to="/schedule-on-demand-appointment" className="btn btn-success">Get An Appointment</Link>
     </div>
 </nav>
 

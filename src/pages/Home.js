@@ -21,7 +21,7 @@ function Home(){
           <h1>Excellent Health Care</h1>
           <p>Wellbeing = We Treat + God's Healing 👨‍⚕️👩‍⚕️</p>
           <div>
-              <Link to="/schedule-appointment" className="btn btn-primary one btn-lg">Schedule Your Appointment Now</Link>
+              <Link to="/schedule-on-demand-appointment" className="btn btn-primary one btn-lg">Schedule Your Appointment Now</Link>
               <Link to="/vaccination-appointment" className="btn btn-primary two btn-lg">Schedule Your COVID-19 Vanccination</Link>
           
           </div>
@@ -63,7 +63,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                       <div className="card-content">
                       <h2>Appointments</h2>
                       <p>For primary care & selected specialties, see provider schedules & make your own appointment online, even if you’re new.</p>
-                    <Link to="/" className="btn btn-primary">Schedule Online</Link>
+                    <Link to="/schedule-on-demand-appointment" className="btn btn-primary">Schedule Online</Link>
                     </div>
                   </div>
               </div>

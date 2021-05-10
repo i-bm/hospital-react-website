@@ -12,7 +12,7 @@ const callNow = {
 
 
 
-function Appointment(){
+function OnDemandAppointment(){
   const [formData, UpdateFormData] = useState('');
   const [posting, setPosting] = useState(false);
   const [posted, setPosted] = useState(false);
@@ -57,7 +57,7 @@ const handleSubmit = (e) =>{
 
             <section style={bigBoder}>
             <div className="container mt-5">
-              <h2>Schedule your Vaccine Appointment</h2><hr />
+              <h2>Schedule your on Demand Appointment</h2><hr />
               <p>After you've sent this request, we'll call you within one or two business days to help you make an appointment.</p>
               <p>You can also make an appointment by calling <span style={callNow}>(233) 24 792 4225</span>.</p>
 
@@ -355,4 +355,4 @@ const handleSubmit = (e) =>{
     );
 }
 
-export default Appointment;
+export default OnDemandAppointment;
