@@ -296,13 +296,13 @@ const handleSubmit = (e) =>{
       <h2>CONTACT INFORMATION</h2><hr />
 <div className="form-group">
     <label className="text-left">Phone Number</label>
-      <input type="number" className="form-control rounded-0" id="phone_number" required onChange={handleChange} maxLength='10' placeholder="ex. 0241234567" />
+      <input type="number" className="form-control rounded-0" id="phone_number"  onChange={handleChange} maxLength='10' placeholder="ex. 0241234567" />
          
           </div>
 
           <div className="form-group">
     <label className="text-left">Email Address</label>
-      <input type="email" className="form-control rounded-0" id="email_address" onChange={handleChange}  placeholder="ex. dsaa@gmail.com" />
+      <input type="email" className="form-control rounded-0" id="email_address" required onChange={handleChange}  placeholder="ex. dsaa@gmail.com" />
           
           </div>
 
