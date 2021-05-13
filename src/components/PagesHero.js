@@ -1,10 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import propTypes from 'prop-types';
 // import bg from '../assets/img/doc-bg.jpg';
-
+PagesHero.propTypes={
+  title:propTypes.string,
+  subText:propTypes.string,
+  bgClass:propTypes.string,
+}
 
 function PagesHero ({title, subText, bgClass}){
 return (
+
   <div>
 <section>
 <div className={`jumbotron hero-pages d-flex align-items-end ${bgClass}`}>
@@ -16,7 +22,7 @@ return (
 </section>
 
 <div className="container bread-crumbs">
-<Link to="/"><i class="fas fa-home"></i></Link> - {title}
+<Link to="/"><i className="fas fa-home"></i></Link> - {title}
 </div>
 
 </div>

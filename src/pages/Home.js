@@ -19,7 +19,7 @@ function Home(){
             <div className="jumbotron d-flex flex-column justify-content-center">
         <div className="container ">
           <h1>Excellent Health Care</h1>
-          <p>Wellbeing = We Treat + God's Healing 👨‍⚕️👩‍⚕️</p>
+          <p>Wellbeing = We Treat + God&apos;s Healing 👨‍⚕️👩‍⚕️</p>
           <div>
               <Link to="/schedule-on-demand-appointment" className="btn btn-primary one btn-lg">Schedule Your Appointment Now</Link>
               <Link to="/vaccination-appointment" className="btn btn-primary two btn-lg">Schedule Your COVID-19 Vanccination</Link>
@@ -33,7 +33,7 @@ function Home(){
           <div className="container">
               <h1 className="text-center">Care when you need it, where you need it.</h1>
               <div className="row">
-                  <div class="col-md-4 section-one-content">
+                  <div className="col-md-4 section-one-content">
                       <div className="card--img">
                       <img src={Vac}  width="95px"  alt="vaccine" />
                       </div>
@@ -45,7 +45,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                     </div>
                   </div>
 
-                  <div class="col-md-4 section-one-content">
+                  <div className="col-md-4 section-one-content">
                       <div className="card--img">
                       <img src={Demand} width="95px" alt="vaccine" />
                       </div>
@@ -56,7 +56,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                     </div>
                   </div>
 
-                  <div class="col-md-4 section-one-content">
+                  <div className="col-md-4 section-one-content">
                       <div className="card--img">
                       <img src={Appoint} width="95px" alt="vaccine" />
                       </div>

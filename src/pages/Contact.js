@@ -16,7 +16,7 @@ numquam blanditiis harum quisquam eius." bgClass="contact-bg" />
             <div className="container content">
                 <div className="row">
                     <div className="col-md-8">
-                    <p>WeCare Hostpital's is open 24/7 all year round, weekends and holidays inclusive. You can reach us through the following means: </p>
+                    <p>WeCare Hostpital&apos;s is open 24/7 all year round, weekends and holidays inclusive. You can reach us through the following means: </p>
                     <p><strong>Phone</strong><br /><a href="tel:+233307086490">+233-(0)30-123-4567</a></p>
 <p><a href="tel:+233307086490">+233-(0)24-792-4225</a> <strong>(Ambulance Hotline)</strong></p>
 <p><strong>Email</strong><br /></p>

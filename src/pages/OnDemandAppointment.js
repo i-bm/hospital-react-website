@@ -29,7 +29,8 @@ const handleSubmit = (e) =>{
   setPosting(true);
   console.log(e);
  
-  Axios.post(`https://hospital.isaacboakyemanu.me/api/receive-vaccine-appointment`, formData
+  Axios.post(`https://hospital.isaacboakyemanu.me/api/receive-hospital-appointment`, formData
+  // Axios.post(`http://localhost:3001/api/receive-hospital-appointment`, formData
   )
   .then(response => {
     console.log(response);
@@ -58,13 +59,13 @@ const handleSubmit = (e) =>{
             <section style={bigBoder}>
             <div className="container mt-5">
               <h2>Schedule your on Demand Appointment</h2><hr />
-              <p>After you've sent this request, we'll call you within one or two business days to help you make an appointment.</p>
+              <p>{`After you've sent this request, we'll call you within one or two business days to help you make an appointment.`}</p>
               <p>You can also make an appointment by calling <span style={callNow}>(233) 24 792 4225</span>.</p>
 
           {posted ?
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <div className="alert alert-success alert-dismissible fade show" role="alert">
   <strong>Yepee!</strong> Your appointment has been scheduled.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>: ''}
@@ -311,9 +312,10 @@ const handleSubmit = (e) =>{
       <input type="text" className="form-control rounded-0" id="address" onChange={handleChange} placeholder="ex. East Legon" />
           
           </div>
-      </div>
+      </div> {/* end contact col */}
+</div>  {/* end first row */}
 
-
+    <div className="row">
       <div className="col-sm-6">
       <h2>Preference</h2><hr />
 <div className="form-group">
@@ -331,6 +333,15 @@ const handleSubmit = (e) =>{
           </div>
           </div>
           </div>{/* end of Preference col */}
+
+          
+   <div className="col-sm-6">
+      <h2>Details</h2><hr />
+       <div className="form-group">
+       <label className="text-left">Reason for appointment</label>
+        <textarea id="reason_for_appointment" placeholder="Reason for appointment" onChange={handleChange} required className="form-control rounded-0" rows="5"></textarea>
+       </div>
+      </div>
     </div>
   
   <div className="form-group">
@@ -345,6 +356,7 @@ const handleSubmit = (e) =>{
       </button>}
     </div>
   </div>
+
 
 </form>
 </div>

@@ -58,13 +58,13 @@ const handleSubmit = (e) =>{
             <section style={bigBoder}>
             <div className="container mt-5">
               <h2>Schedule your Vaccine Appointment</h2><hr />
-              <p>After you've sent this request, we'll call you within one or two business days to help you make an appointment.</p>
+              <p>{`After you've sent this request, we'll call you within one or two business days to help you make an appointment.`}</p>
               <p>You can also make an appointment by calling <span style={callNow}>(233) 24 792 4225</span>.</p>
 
           {posted ?
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <div className="alert alert-success alert-dismissible fade show" role="alert">
   <strong>Yepee!</strong> Your appointment has been scheduled.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>: ''}

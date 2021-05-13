@@ -1,3 +1,4 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/bootsrap-overrides.css';
 import './assets/css/style.css';
@@ -15,9 +16,10 @@ import OnDemandAppointment from './pages/OnDemandAppointment';
 
 function App() {
   return (
+        <div>
     <Router>
-    <div>
-       <Switch>
+
+      <Switch>
       <Home exact path="/" />
       <About path="/about-us" component={About} />
       <Contact path="/contact-us" component={Contact} />
@@ -28,8 +30,9 @@ function App() {
       <VacAppointment path="/vaccination-appointment" component={VacAppointment} />
       <OnDemandAppointment path="/schedule-on-demand-appointment" component={OnDemandAppointment} />
       </Switch>
-    </div>
+    
     </Router>
+    </div>
   );
 }
 

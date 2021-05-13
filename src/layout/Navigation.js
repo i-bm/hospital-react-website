@@ -22,9 +22,9 @@ function Navigation (){
       </li>
     </ul>
     {/* <ul className="navbar-nav">
-    <li className="nav-item"><Link to="#"> <i class="fab fa-facebook-f"></i></Link></li>
-    <li className="nav-item"><Link to="#"> <i class="fab fa-twitter"></i></Link></li>
-    <li className="nav-item"><Link to="#"> <i class="fab fa-linkedin-in"></i></Link></li>
+    <li className="nav-item"><Link to="#"> <i className="fab fa-facebook-f"></i></Link></li>
+    <li className="nav-item"><Link to="#"> <i className="fab fa-twitter"></i></Link></li>
+    <li className="nav-item"><Link to="#"> <i className="fab fa-linkedin-in"></i></Link></li>
     <li className="nav-item"><Link to="/appointment" className="btn btn-success">Get An Appointment</Link></li>
     </ul> */}
     <Link to="/schedule-on-demand-appointment" className="btn btn-success">Get An Appointment</Link>
@@ -92,8 +92,8 @@ function Navigation (){
   <Link to="/" className="navbar-brand"><img src={Logo} width="180" alt="Logo" /></Link>
 
   {openMenu ? 
-  <Link to="#" onClick={()=>{setOpenMenu(false)}}><i class="fal fa-times"></i></Link>:
-  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i class="fas fa-bars bars"></i></Link>
+  <Link to="#" onClick={()=>{setOpenMenu(false)}}><i className="fal fa-times"></i></Link>:
+  <Link to="#" onClick={()=>{setOpenMenu(true)}}><i className="fas fa-bars bars"></i></Link>
 }
  
   </div>

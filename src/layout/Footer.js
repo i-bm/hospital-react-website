@@ -16,7 +16,7 @@ function Footer (){
             <div className="row">
                 <div className="col-md-4">
                    <img src={Logo} width="180px" alt="" />
-                   <p className="mt-3">We do care about your wellbeing.Our wellbeing equation is Wellbeing = We Treat + God's healing.</p>
+                   <p className="mt-3">We do care about your wellbeing.Our wellbeing equation is Wellbeing = We Treat + God&apos;s healing.</p>
                 </div>
 
                 <div className="col-md-2 links">
