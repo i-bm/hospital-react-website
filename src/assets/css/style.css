@@ -163,7 +163,6 @@ footer {
 }
 
 .content{
-    /* height: 400px; */
     margin-top: 50px;
     margin-bottom: 80px;
 }
@@ -339,22 +338,12 @@ margin-left: -13px !important
   color:var(--blue-black)
 }
 
-/* .fa-times{
-  font-size:2rem;
-  font-weight: 300;
-  color:#fff;
-  position: absolute;
-  left:15px;
-  top:15px;
-  
-} */
+
 .mobile-menu ul li a{
   padding-left: 20px;
-  /* margin-bottom: 20px; */
   color:var(--white-text);
   font-size:1.09rem;
   font-weight: 300;
-  /* border:1px solid red; */
   line-height: 50px;
 
 }
@@ -372,7 +361,23 @@ margin-left: -13px !important
 
 .section-one-content{
 display: flex;
+justify-content: center;
 }
+
+
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.75) url(https://www.techmarketgh.com/assets/img/loader.gif ) no-repeat center center;
+  z-index: 999;
+}
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* .jumbotron {

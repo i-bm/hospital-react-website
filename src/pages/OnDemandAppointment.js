@@ -347,9 +347,12 @@ const handleSubmit = (e) =>{
   <div className="form-group">
     <div className="col-sm-3">
     {posting ? 
+    <div>
+    <div className="loader"></div>
     <button type="button" disabled className="btn btn-primary btn-block mb-5">
     Please wait...
     </button>
+    </div>
      : 
     <button type="submit" className="btn btn-primary btn-block mb-5">
       Submit 

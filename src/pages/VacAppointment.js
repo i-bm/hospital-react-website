@@ -43,7 +43,7 @@ const handleSubmit = (e) =>{
     setPosting(false);
     setTimeout(function(){
       setPosted(false);
-    }, 3000);
+    }, 5000);
     
    
   })
@@ -56,14 +56,14 @@ const handleSubmit = (e) =>{
             <Navigation /> 
 
             <section style={bigBoder}>
-            <div className="container mt-5">
+             <div className="container mt-5">
               <h2>Schedule your Vaccine Appointment</h2><hr />
               <p>{`After you've sent this request, we'll call you within one or two business days to help you make an appointment.`}</p>
               <p>You can also make an appointment by calling <span style={callNow}>(233) 24 792 4225</span>.</p>
 
           {posted ?
               <div className="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Yepee!</strong> Your appointment has been scheduled.
+  <strong>Yipee!</strong> Your appointment has been scheduled.
   <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -336,9 +336,12 @@ const handleSubmit = (e) =>{
   <div className="form-group">
     <div className="col-sm-3">
     {posting ? 
+    <div>
+    <div className="loader"></div>
     <button type="button" disabled className="btn btn-primary btn-block mb-5">
     Please wait...
     </button>
+    </div>
      : 
     <button type="submit" className="btn btn-primary btn-block mb-5">
       Submit 
@@ -348,6 +351,11 @@ const handleSubmit = (e) =>{
 
 </form>
 </div>
+
+
+
+
+
 </section>
 <Footer />
         </div>
