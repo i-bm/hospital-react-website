@@ -64,7 +64,7 @@ const handleSubmit = (e) =>{
 
           {posted ?
               <div className="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Yepee!</strong> Your appointment has been scheduled.
+  <strong>Yipee!</strong> Your appointment has been scheduled.
   <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
